@@ -17,6 +17,7 @@ class Index implements ActionInterface
         PageFactory $pageFactory,
         PhpstudiosCollectionfactory $phpstudiosCollectionfactory
     ) {
+        echo 'kaleem';
         $this->phpstudiosCollectionfactory=$phpstudiosCollectionfactory;
         $this->pageFactory = $pageFactory;
     }
