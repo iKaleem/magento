@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page layout ="3columns_double_footer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block name="php" template="PHPStudios_Simple::description.phtml">
+                <block name="check" template="PHPStudios_Simple::description2.phtml"/>
+            </block>
+            <block class="Magento\Cms\Block\Block" name="unick_block_name">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">php-php</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
