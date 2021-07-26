@@ -20,6 +20,7 @@ class Index implements ActionInterface
         echo 'kaleem';
         $this->phpstudiosCollectionfactory=$phpstudiosCollectionfactory;
         $this->pageFactory = $pageFactory;
+        echo "hello world";
     }
 
     public function execute()
