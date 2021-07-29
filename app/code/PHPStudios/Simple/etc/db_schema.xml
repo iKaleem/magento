@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="phpstudios_simple_sale_bestsellers" resource="sales" engine="innodb" comment="PHPStudios BestSelling Sales Bestseller">
+        <column xsi:type="int" name="id" unsigned="true" nullable="false" identity="true" comment="ID"/>
+        <column xsi:type="boolean" name="is_featured" comment="Is featured?"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+        <index referenceId="PHPSTUDIOS_SIMPLE_SALE_BESTSELLERS_IS_FEATURED" indexType="btree">
+            <column name="is_featured"/>
+        </index>
+    </table>
+</schema>

@@ -52,17 +52,7 @@ class Popularbestseller implements DataPatchInterface
         ];
 
         $phpstudiosmodel->setData($data);
-
         $this->resourcemodel->save($phpstudiosmodel);
-
         $setup->endSetup();
-//        $table=$setup->getTable(RModel::MAIN_TABLE);
-//        $setup->getConnection()->insert(
-//            $table,
-//            [
-//                'id'=>'1',
-//                'is_featured'=>true,
-//            ]
-//        );
     }
 }
